@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script defer src="render.js"></script>
+</head>
+
+<body>
+    <div class="add_assignment_blur" id="add_assignment_blur">
+        <div class="add_assignment">
+            <p class="add_assignment_label">Add new assignment</p>
+
+            <div class="add_assignment_container_aubject_due_lvl">
+                <div class="add_assignment_container_subject">
+                    <p class="add_assignment_text_sth">Subject</p>
+                    <input type="text" id="add_assignment_input_subject">
+                </div>
+                <div class="add_assignment_container_due">
+                    <p class="add_assignment_text_sth">Due date</p>
+                    <input type="text" id="add_assignment_input_due">
+                </div>
+                <div class="add_assignment_container_lvl">
+                    <p class="add_assignment_text_sth">LVL</p>
+                    <input type="number" id="add_assignment_input_lvl" value="3" min="1" max="5">
+                </div>
+            </div>
+
+            <div class="add_assignment_container_description">
+                <p class="add_assignment_text_sth">Description</p>
+                <textarea type="text" id="add_assignment_input_description" rows="3"></textarea>
+            </div>
+
+            <div class="add_sign_container">
+                <button class="add_sign" id="add_assignment_sign2" onclick="add_assignment_button_click2()">Add</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="main_assignments_container" id="main_assignments_container">
+        <p class="header_label">Assignments</p>
+        <div class="add_sign_container">
+            <button class="add_sign" id="add_assignment_sign1" onclick="add_assignment_button_click1()">Add</button>
+        </div>
+
+        <!--Assignments go here-->
+
+    </div>
+
+    <hr class="main_divider"></hr>
+
+    <div class="main_other_tasks_container">
+        <p class="header_label">Other</p>
+
+    </div>
+
+</body>

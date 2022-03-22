@@ -1,0 +1,273 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+.add_assignment_blur {
+    display: none;
+    /* display: flex; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.3);
+    z-index: 4;
+}
+.add_assignment {
+    /* height: 60vh; */
+    min-width: 350px;
+    /* width: 30vw; */
+    margin: 0 auto;
+    padding: 30px 50px;
+    align-self: center;
+    background-color: #FFFFFF;
+    border: 2px solid;
+    border-color: lightgray;
+    border-radius: 30px;
+}
+.add_assignment_label {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+
+
+
+
+
+.add_assignment_container_aubject_due_lvl {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+
+
+.add_assignment_text_sth {
+    width: 100%;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.add_assignment_container_subject {
+    width: 150px;
+    display: inline-block;
+}
+#add_assignment_input_subject {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 7px;
+    border-color: lightgray;
+    font-size: 20px;
+}
+
+
+.add_assignment_container_due {
+    width: 100px;
+    display: inline-block;
+}
+#add_assignment_input_due {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 7px;
+    border-color: lightgray;
+    font-size: 20px;
+}
+
+
+.add_assignment_container_lvl {
+    width: 30px;
+    display: inline-block;
+}
+#add_assignment_input_lvl {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 7px;
+    border-color: lightgray;
+    font-size: 20px;
+}
+
+
+.add_assignment_container_description {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+#add_assignment_input_description {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 7px;
+    border-color: lightgray;
+    font-size: 20px;
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main_assignments_container {
+    width: 55%;
+}
+
+.header_label {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #DDDDDD;
+    padding: 30px 0 20px 0;
+}
+
+.add_sign_container {
+    text-align: center;
+}
+
+.add_sign {
+    color: #FFFFFF;
+    background-color: cornflowerblue;
+    height: 40px;
+    width: 60px;
+    line-height: 32px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid;
+    border-color: lightgray;
+    border-radius: 22px;
+    
+    justify-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
+}
+.add_sign:hover {
+    background-color: dodgerblue;
+    border-color: rgb(181, 197, 211);
+    transition: all 250ms linear;
+  }
+
+.main_divider {
+    display: block;
+    margin: 0;
+    border-width: 0;
+}
+
+.assignment {
+    background-color: white;
+    align-self: center;
+    max-width: 80%;
+    margin: 15px auto 30px auto;
+    
+}
+.assignment_slot {
+    background-color: #FFFFFF;
+    position: relative;
+    height: 40px;
+    border: 2px solid;
+    border-color:lightgrey;
+    border-radius: 22px;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
+}
+.assignment_label_date_container
+{
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.assignment_subject {
+    text-shadow: 1px 1px 2px #DDDDDD;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.assignment_due {
+    align-self: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 0 10px;
+    text-shadow: 1px 1px 2px #DDDDDD;
+}
+.assignment_slot_cover {
+    background-color: #FFFFFF;
+    height: 40px;
+    width: 0;
+    margin: 0;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+.assignment_slider {
+    background-color: greenyellow;
+    height: 40px;
+    width: 40px;
+    margin: -2px -2px 0 0;
+    border: 2px solid;
+    border-color: lightgray;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
+}
+.assignment_description {
+    background-color: #EEEEEE;
+    width: 60%;
+    font-size: 15px;
+    margin: -10px 0 0 15px;
+    padding: 14px 7px 7px 7px;
+    border: 2px solid;
+    border-color: lightgray;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+
+
+.main_other_tasks_container {
+    width: 40%;
+    /* background-color: aliceblue; */
+}
+
+
+
+
+
+@media only screen and (max-width: 835px) {
+    body {
+        display: block;
+    }
+    .main_assignments_container {
+        width: 100%;
+    }
+    .main_other_tasks_container {
+        width: 100%;
+    }
+}
