@@ -1,5 +1,4 @@
 var main_ass_inf;
-var $dragging = null;
 
 function compare_dates(due1, due2, lvl1, lvl2) {
     if(due1[3] * 10 + due1[4] > due2[3] * 10 + due2[4]) return true;
@@ -93,6 +92,32 @@ function add_new_assignment(c_subject, c_due, c_lvl, c_text_description) {
     make_slider_draggable(n);
 }
 
+
+
+
+
+
+
+
+
+function animate(options) {
+
+    var start = performance.now();
+
+    requestAnimationFrame(function animate(time) {
+        var timeFraction = (time - start) / options.duration;
+        if (timeFraction > 1) timeFraction = 1;
+
+        var progress = timeFraction;
+      
+        options.draw(progress);
+  
+        if (timeFraction < 1) {
+            requestAnimationFrame(animate);
+        }
+    });
+}
+
 function make_slider_draggable(n) {
     const assignment = $(".assignment")[n];
     const slot = assignment.querySelector(".assignment_slot");
@@ -104,25 +129,51 @@ function make_slider_draggable(n) {
     const due = label_date_container.querySelector(".assignment_due");
     const description = assignment.querySelector(".assignment_description");
 
-    $(slider).draggable({
-        axis: "x", containment :
-        [$(slot).position().left, 0, $(slot).position().left + $(slot).width() - $(slider).width(), 0],
-        drag: function(ev, ui) {
-            slot_cover.style.width = $(slot).width() - $(slider).position().left - getComputedStyle(slider).borderWidth[0] + "px";
-        },
-        stop: function(ev, ui) {
-            if(2 * $(slider).position().left + $(slider).width() >= $(slot).width())
+    slider.addEventListener('mousedown', function(e){
+        e.preventDefault();
+    
+        let start_pos_mouse = e.clientX;
+        let start_pos_left = slider.offsetLeft + parseInt(getComputedStyle(slider).borderWidth, 10);
+        
+        document.addEventListener('mousemove', move_slider);
+        
+        document.addEventListener('mouseup', finish_slider);
+    
+        function finish_slider(e) {
+            document.removeEventListener('mousemove', move_slider);
+    
+            if(slider.offsetLeft * 2 + slider.offsetWidth > slot.offsetWidth)
             {
-                slot_cover.style.width = "0px";
-
+                const animation_start_right = slot.offsetWidth - slider.offsetLeft - slider.offsetWidth - parseInt(getComputedStyle(slider).borderWidth, 10);
                 slider.style.left = "";
-                slider.style.right = "0px";
+    
+                animate({
+                    duration: 100,
+                    draw: function(progress) {
+                        slider.style.right = (progress - 1) * (progress - 1) * animation_start_right + 'px';
+                        slot_cover.style.width = slot.offsetWidth - slider.offsetLeft
+                         - 2 * parseInt(getComputedStyle(slot).borderWidth, 10) - parseInt(getComputedStyle(slider).borderWidth, 10) + "px";
+                    }
+                });
+    
+                slider.style.right = "0";
+                slot_cover.style.width = "0";
             }
             else
             {
-                slot_cover.style.width = $(slot).position().left - 2 + "px";
-
-                slider.style.left = "-" + getComputedStyle(slider).borderWidth;
+                const animation_start_left = slider.offsetLeft + parseInt(getComputedStyle(slider).borderWidth, 10);
+                slider.style.right = "";
+    
+                animate({
+                    duration: 100,
+                    draw: function(progress) {
+                        slider.style.left = (progress - 1) * (progress - 1) * animation_start_left + 'px';
+                        slot_cover.style.width = slot.offsetWidth - slider.offsetLeft
+                         - 2 * parseInt(getComputedStyle(slot).borderWidth, 10) - parseInt(getComputedStyle(slider).borderWidth, 10) + "px";
+                    }
+                });
+    
+                slider.style.left = "0";
 
                 $(assignment).fadeOut(500, function() {
                     assignment.remove();
@@ -136,6 +187,20 @@ function make_slider_draggable(n) {
                 
                 --main_ass_inf.n;
             }
+    
+            document.removeEventListener('mouseup', finish_slider);
+        }
+    
+        function move_slider(e) {
+            if(start_pos_left + e.clientX - start_pos_mouse < 0)
+                slider.style.left = "0";
+            else if(start_pos_left + e.clientX - start_pos_mouse > slot.offsetWidth - slider.offsetWidth)
+                slider.style.left = (slot.offsetWidth - slider.offsetWidth) + "px";
+            else
+                slider.style.left = (start_pos_left + e.clientX - start_pos_mouse) + "px";
+
+            slot_cover.style.width = slot.offsetWidth - slider.offsetLeft
+             - 2 * parseInt(getComputedStyle(slot).borderWidth, 10) - parseInt(getComputedStyle(slider).borderWidth, 10) + "px";
         }
     });
 }
@@ -152,6 +217,15 @@ function find_in_main_ass_inf(c_subject, c_due, c_text_description)
     return null;
 }
 
+
+
+
+
+
+
+
+
+
 function add_assignment_button_click1() {
     document.getElementById("add_assignment_blur").style.display = "flex";
 }
@@ -165,9 +239,9 @@ function add_assignment_button_click2() {
      document.getElementById("add_assignment_input_description").value);
 }
 
-window.addEventListener('resize', function(event) {
-    for(let i = 0; i < main_ass_inf.n; ++i) make_slider_draggable(i);
-}, true);
+//window.addEventListener('resize', function(event) {
+//    for(let i = 0; i < main_ass_inf.n; ++i) make_slider_draggable(i);
+//}, true);
 
 $(window).on("beforeunload", function() { 
     localStorage.setItem("main_ass_inf", JSON.stringify(main_ass_inf));
