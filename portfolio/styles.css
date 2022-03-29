@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    padding-top: 10px;
+    padding: 10px 0 50px 0;
     width: 60%;
     min-width: 800px;
     height: 100%;
@@ -121,12 +121,55 @@ a {
     border-color: #039dfc;
     border: 5px solid;
 }
+.theme3 {
+    white-space: nowrap;
+    width: fit-content;
+    margin: 30px auto 10px auto;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
 .description1 {
     width: 80%;
     margin: 20px auto;
     font-size: 22px;
     font-weight: bold;
     text-align: justify;
+}
+.description2 {
+    width: 75%;
+    margin: 20px auto;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+}
+.center_container_1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.demo_link {
+    display: block;
+    width: fit-content;
+    color: #ffffff;
+    background-color: #5ec2ff;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    text-align: center;
+    margin: 10px;
+    padding: 12px;
+    border: 4px solid;
+    border-color: #039dfc;
+    border-radius: 10px;
+}
+.demo_video {
+    width: 40%;
+    margin: 10px 20px;
+    border: 4px solid;
+    border-color: #039dfc;
+    border-radius: 30px;
 }
 
 
