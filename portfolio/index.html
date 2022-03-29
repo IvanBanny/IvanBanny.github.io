@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <script src="jquery.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div id="topnav">
+        <a onclick="play_audio_jump1(); window.scrollTo({top: 0, behavior: 'smooth'});" >About me</a>
+        <a onclick="play_audio_jump1(); document.getElementById('nav_coding').scrollIntoView({ behavior: 'smooth'});">Coding and hobbies</a>
+        <a onclick="play_audio_jump1(); document.getElementById('nav_olympiads').scrollIntoView({ behavior: 'smooth'});">Olympiads and contests</a>
+    </div>
+
+    <p class="theme1">Hi, I'm Ivan!</p>
+    <div id="me1_img_container">
+        <img id="me1_img1" class="me1_img" src="images/me1.png">
+        <img id="me1_img2" class="me1_img" src="images/me1_zoom.png">
+        <div id="contact_info_container1">
+            <p id="contact_info1">
+                falco.zebrine@gmail.com<br>
+                +380 97 511 14 28
+            </p>
+        </div>
+    </div>
+
+    <p id="contact_info2">
+        falco.zebrine@gmail.com<br>
+        +380 97 511 14 28
+    </p>
+
+    <p class="description1">
+        Hi, my name is Ivan! I am from Kyiv, Ukraine and I am 16 years old.
+    </p>
+    <p class="description1">
+        I study at <a href="https://en.wikipedia.org/wiki/Kyiv_Natural_Science_Lyceum_No._145">Kyiv Natural
+         Science Lyceum No. 145</a> specialized in Mathematics and Physics.
+    </p>
+    <p class="description1">
+        I am a prize-winner and participant of various individual and team contests and olympiads,
+         mostly in Mathematics, but also in Physics and Informatics.
+    </p>
+    <p class="description1">
+        Besides that, I am proficient in English (IELTS band 7.0 = C1), Ukrainian, Russian and also know a bit of German (at about A2).
+    </p>
+    
+
+    <div id="nav_coding"></div>
+    <p class="theme2">Coding and hobbies</p>
+
+
+    <div id="canvas_container"><!--canvas is created here--></div>
+    <p class="click_me_sign">
+        ⬆<br>
+        Click/Tap It!
+    </p>
+
+
+    <p class="description1">
+        I have a broad experience of coding. In my free time I like to set myself goals and do fun
+         projects that I can show to others (some of them are on my <a href="https://github.com/IvanBanny">Github page</a>).
+         I have a good knowledge of C++, Python, Html, Css and JavaScript.
+         I also have experience of making applications using Electron
+         <a href="https://github.com/IvanBanny/assignments-app">(link to Github)</a>, Visual Studio .NET and Unity.
+    </p>
+    <p class="description1">
+        I am curious about AI and I like to put it into practical aplications.<br>
+        Here are 2 of my projects:
+    </p>
+    <p class="description1">
+        • A pointer that follows face in x and y dimensions, using Arduino circuit board,
+         2 servo motors, my laptop with camera and, of course, my programing skills in Python.<br>
+        • A drone that follows face (I made my Tello drone follow faces using Python and djiTelloPy library)
+    </p>
+    <p class="description1">Besides that, I frequently participate in Informatical contests.</p>
+    <p class="description1">
+        I also have experience in Blender and various video editing software:
+    </p>
+    <p class="description1">
+        My other hobby is 3d printing. My projects include a plastic version of myself, a pen, a custom fork for my brother's trains:
+    </p>
+
+
+
+    <p class="theme2" id="nav_olympiads">Olympiads and contests</p>
+    <p class="description1">
+        I frequently participate in different olympiads and contests.<br>
+
+        These are some of my achievements:<br>    
+    </p>
+    <p class="description1" style="font-size: 17px; width: 75%; text-align: left; margin-bottom: 50px;">
+        • Participant of the 9th European Mathematical Cup<br>
+        <em style="font-size: 13px; color: #0384fc;">(2020)</em><br><br>
+        • Twice a participant of selections for Ukrainian Mathematical Olympiad in Mathematics<br>
+        <em style="font-size: 13px; color: #0384fc;">(2021, 2022)</em><br><br>
+        • Twice a 2nd prize winner in Kyiv Mathematical Olympiad<br>
+        <em style="font-size: 13px; color: #0384fc;">(2021, 2022 and 3rd in 2019)</em><br><br>
+        • Member of the team-prizewinner on Ukrainian mathematical team olympiad "Mathematical Battles"<br>
+        <em style="font-size: 13px; color: #0384fc;">(2021 - 2nd place; 2020 - 1st place; 2019 - 3rd place; 2018 - 4th place)</em><br><br>
+        • Member of the team-prizewinner of Kyiv mathematical team olympiad "Mathematical battles"<br>
+        <em style="font-size: 13px; color: #0384fc;">(2020 - 3rd place; 2019 - 3rd place; 2018 - 4th place)</em>
+    </p>
+    
+
+</body>
