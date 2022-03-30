@@ -10,6 +10,8 @@ const bar_color_1 = "#039dfc";
 const bar_color_2 = "#5ec2ff";
 const bar_color_high_1 = "#FFCD00"; //highlighted bar
 const bar_color_high_2 = "#ffe05e"; //highlighted bar
+const normal_body_color = "#ffffff";
+const second_body_color = "#000000";
 
 var audio_jump1 = new Audio('sounds/jump.mp4');
 
@@ -36,6 +38,23 @@ init_canvas();
 raf = window.requestAnimationFrame(draw_bars);
 
 window.addEventListener('resize', init_canvas);
+
+const coding_container = document.getElementById('coding_container');
+var flag_normal = true;
+document.addEventListener('scroll', function(e) {
+    if(flag_normal && 2 * coding_container.getBoundingClientRect().top <= window.innerHeight &&
+    2 * coding_container.getBoundingClientRect().top + 2 * coding_container.getBoundingClientRect().height >= window.innerHeight)
+    {
+        document.body.style.backgroundColor = second_body_color;
+        flag_normal = false;
+    }
+    else if(!flag_normal && (2 * coding_container.getBoundingClientRect().top > window.innerHeight ||
+    2 * coding_container.getBoundingClientRect().top + 2 * coding_container.getBoundingClientRect().height < window.innerHeight))
+    {
+        document.body.style.backgroundColor = normal_body_color;
+        flag_normal = true;
+    }
+});
 
 //End of init
 
