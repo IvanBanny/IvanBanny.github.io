@@ -273,6 +273,16 @@ a {
 
 
 
+.dddprint_image {
+    display: block;
+    border: 4px solid;
+    border-color: #039dfc;
+    border-radius: 30px;
+    margin: 10px auto;
+}
+
+
+
 
 
 
