@@ -10,6 +10,7 @@ body {
     border-bottom: 30px solid;
     border-color: #039dfc;
     box-shadow: 5px -5px 10px 0 rgba(0, 0, 0, 0.2), -6px -5px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 22px;
     color: #039dfc;
     transition: background-color 0.3s;
 }
@@ -207,9 +208,25 @@ a {
 
 
 
+.demo_description_container {
+    width: 90%;
+    padding: 0 5%;
+    display:flex;
+    justify-content: center;
+    margin: 50px auto;
+    background-color: #444444;
+    border-color: #039dfc;
+    border-top: 15px solid;
+    border-bottom: 15px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    transform: translateX(-1px);
+    transition: background-color 0.3s;
+}
 .assignments-app-demo_container {
     width: fit-content;
-    margin: 0 auto;
+    height: fit-content;
+    margin: 20px auto;
 }
 .demo_header {
     white-space: nowrap;
@@ -245,6 +262,14 @@ a {
     border-color: #039dfc;
     border-radius: 30px;
 }
+.demo_description {
+    margin: 0;
+    height: fit-content;
+    align-self: center;
+    padding: 30px 0 30px 30px;
+    font-weight: bold;
+    text-align: justify;
+}
 
 
 
@@ -262,6 +287,19 @@ a {
     }
     #topnav {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .demo_description_container {
+        width: 80%;
+        padding: 0 10%;
+        display:block;
+    }
+    .demo_description {
+        padding: 30px;
+        font-weight: bold;
+        text-align: justify;
     }
 }
 

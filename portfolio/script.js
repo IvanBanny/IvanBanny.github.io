@@ -12,6 +12,7 @@ const bar_color_high_1 = "#FFCD00"; //highlighted bar
 const bar_color_high_2 = "#ffe05e"; //highlighted bar
 const normal_body_color = "#ffffff";
 const second_body_color = "#000000";
+const second_demo_description_container_color = "#444444";
 
 var audio_jump1 = new Audio('sounds/jump.mp4');
 
@@ -46,12 +47,22 @@ document.addEventListener('scroll', function(e) {
     2 * coding_container.getBoundingClientRect().top + 2 * coding_container.getBoundingClientRect().height >= window.innerHeight)
     {
         document.body.style.backgroundColor = second_body_color;
+        var demo_description_container_class = document.getElementsByClassName("demo_description_container");
+        for(var i = 0; i < demo_description_container_class.length; ++i) {
+            demo_description_container_class[i].style.backgroundColor = second_demo_description_container_color;
+        }
+
         flag_normal = false;
     }
     else if(!flag_normal && (2 * coding_container.getBoundingClientRect().top > window.innerHeight ||
     2 * coding_container.getBoundingClientRect().top + 2 * coding_container.getBoundingClientRect().height < window.innerHeight))
     {
         document.body.style.backgroundColor = normal_body_color;
+        var demo_description_container_class = document.getElementsByClassName("demo_description_container");
+        for(var i = 0; i < demo_description_container_class.length; ++i) {
+            demo_description_container_class[i].style.backgroundColor = normal_body_color;
+        }
+
         flag_normal = true;
     }
 });
