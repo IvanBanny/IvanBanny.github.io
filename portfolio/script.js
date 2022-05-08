@@ -40,32 +40,32 @@ raf = window.requestAnimationFrame(draw_bars);
 
 window.addEventListener('resize', init_canvas);
 
-const coding_container = document.getElementById('coding_container');
-var flag_normal = true;
-document.addEventListener('scroll', function(e) {
-    if(flag_normal && 2 * coding_container.getBoundingClientRect().top <= window.innerHeight &&
-    2 * coding_container.getBoundingClientRect().top + 2 * coding_container.getBoundingClientRect().height >= window.innerHeight)
-    {
-        document.body.style.backgroundColor = second_body_color;
-        var demo_description_container_class = document.getElementsByClassName("demo_description_container");
-        for(var i = 0; i < demo_description_container_class.length; ++i) {
-            demo_description_container_class[i].style.backgroundColor = second_demo_description_container_color;
-        }
+// const coding_container = document.getElementById('coding_container');
+// var flag_normal = true;
+// document.addEventListener('scroll', function(e) {
+//     if(flag_normal && 2 * coding_container.getBoundingClientRect().top <= window.innerHeight &&
+//     2 * coding_container.getBoundingClientRect().top + 2 * coding_container.getBoundingClientRect().height >= window.innerHeight)
+//     {
+//         document.body.style.backgroundColor = second_body_color;
+//         var demo_description_container_class = document.getElementsByClassName("demo_description_container");
+//         for(var i = 0; i < demo_description_container_class.length; ++i) {
+//             demo_description_container_class[i].style.backgroundColor = second_demo_description_container_color;
+//         }
 
-        flag_normal = false;
-    }
-    else if(!flag_normal && (2 * coding_container.getBoundingClientRect().top > window.innerHeight ||
-    2 * coding_container.getBoundingClientRect().top + 2 * coding_container.getBoundingClientRect().height < window.innerHeight))
-    {
-        document.body.style.backgroundColor = normal_body_color;
-        var demo_description_container_class = document.getElementsByClassName("demo_description_container");
-        for(var i = 0; i < demo_description_container_class.length; ++i) {
-            demo_description_container_class[i].style.backgroundColor = normal_body_color;
-        }
+//         flag_normal = false;
+//     }
+//     else if(!flag_normal && (2 * coding_container.getBoundingClientRect().top > window.innerHeight ||
+//     2 * coding_container.getBoundingClientRect().top + 2 * coding_container.getBoundingClientRect().height < window.innerHeight))
+//     {
+//         document.body.style.backgroundColor = normal_body_color;
+//         var demo_description_container_class = document.getElementsByClassName("demo_description_container");
+//         for(var i = 0; i < demo_description_container_class.length; ++i) {
+//             demo_description_container_class[i].style.backgroundColor = normal_body_color;
+//         }
 
-        flag_normal = true;
-    }
-});
+//         flag_normal = true;
+//     }
+// });
 
 //End of init
 
