@@ -1,12 +1,293 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
-        <title>Ivan Banny - portfolio</title>
-        <link rel="icon" type="image/png" href="/images/favicon1.png">
-        <meta name="description" content="Check out my personal webpage!"/>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#ce6819" />
+        <meta
+            name="description"
+            content="Ivan Banny. Deep learning research, Dirtflow, and world models for drones."
+        />
+        <title>Ivan Banny - Research</title>
+        <link rel="icon" href="assets/favicon.png" type="image/png" />
+        <link
+            rel="preload"
+            href="assets/fonts/ibm-plex-sans.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script type="module" src="app.js"></script>
     </head>
     <body>
-        <script>
-            window.location.replace("/portfolio/");
-        </script>
+        <a class="skip-link" href="#dirtflow">Skip to research</a>
+        <canvas id="light" aria-hidden="true"></canvas>
+        <header class="site-header">
+            <a class="identity" href="#overview" aria-label="Ivan Banny - overview"
+                >Ivan Banny</a
+            >
+            <nav aria-label="Contact and CV">
+                <a
+                    href="https://drive.google.com/file/d/1r29k6EMLo9zN0jcLl2ZPZqSrWB3xpyei"
+                    target="_blank"
+                    rel="noopener"
+                    >CV</a
+                >
+                <a href="mailto:ivann.banny@gmail.com">Email</a>
+            </nav>
+        </header>
+        <main>
+            <section
+                class="chapter opening"
+                id="overview"
+                aria-label="Overview"
+                tabindex="-1"
+            >
+                <div class="opening-copy">
+                    <h1>Ivan Banny</h1>
+                    <p class="role">Deep learning research</p>
+                    <p class="location">Eindhoven, NL</p>
+                    <div class="about">
+                        <p>
+                            I'm an MSc student in Data Science and AI at TU/e. I work on
+                            deep learning architectures, from their mathematical
+                            foundations to how they run on hardware. I use PyTorch and
+                            JAX, and write C++ and custom CUDA kernels to speed up model
+                            execution.
+                        </p>
+                        <p>
+                            I've published research in AI safety. My background includes
+                            IMO selection and ICPC regionals. I'm looking for research
+                            roles where I can develop and study new architectures.
+                        </p>
+                        <p>
+                            I'm also Tech Lead of Serpentine AI, TU/e's AI student team,
+                            overseeing all our projects.
+                        </p>
+                    </div>
+                    <a class="enter-research" href="#dirtflow"
+                        >Selected research <span aria-hidden="true">&#8595;</span></a
+                    >
+                </div>
+            </section>
+            <section
+                class="chapter"
+                id="dirtflow"
+                aria-labelledby="dirtflow-title"
+                tabindex="-1"
+            >
+                <div class="chapter-copy">
+                    <h2 id="dirtflow-title" tabindex="-1">Dirtflow</h2>
+                    <p class="meta">2026 - present / Independent research</p>
+                    <p class="deck">Flow matching for 3D generation and editing.</p>
+                    <p>
+                        I independently develop Dirtflow, adapting pretrained TRELLIS
+                        models with two-stage flow matching to generate geometry and
+                        full Minecraft block states from text and 3D context.
+                    </p>
+                    <p>
+                        I built the data pipeline for nearly 470,000 builds and the
+                        distributed training and evaluation systems. My experiments
+                        study learning dynamics and how geometry constrains material
+                        generation.
+                    </p>
+                    <nav class="project-links" aria-label="Dirtflow links">
+                        <a
+                            class="demo-link"
+                            href="https://github.com/IvanBanny/IvanBanny.github.io"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Research <span aria-hidden="true">&#8599;</span>
+                        </a>
+                        <a
+                            class="demo-link"
+                            href="https://huggingface.co/spaces/IvanBanny/dirtflow-v0"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Demo <span aria-hidden="true">&#8599;</span>
+                        </a>
+                        <a
+                            class="demo-link"
+                            href="https://rift.tail157801.ts.net/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Temporary demo <span aria-hidden="true">&#8599;</span>
+                        </a>
+                    </nav>
+                </div>
+                <div class="generation-demo">
+                    <div
+                        id="generation-stage"
+                        class="generation-stage"
+                        role="group"
+                        aria-label="Dirtflow generation examples"
+                        hidden
+                    ></div>
+                </div>
+            </section>
+            <section
+                class="chapter"
+                id="droomba"
+                aria-labelledby="droomba-title"
+                tabindex="-1"
+            >
+                <div class="chapter-copy">
+                    <h2 id="droomba-title" tabindex="-1">Droomba</h2>
+                    <p class="meta">Ongoing research / Serpentine, TU/e</p>
+                    <p class="deck">World models for autonomous flight.</p>
+                    <p>
+                        I'm working on model-based reinforcement learning for drone
+                        navigation in unfamiliar environments. The approach learns
+                        action-conditioned world models and trains control policies
+                        through imagined trajectories.
+                    </p>
+                    <p>
+                        I'm studying how perception and memory affect generalization to
+                        unseen layouts, with transfer from simulation to physical flight
+                        as a central problem. The goal is real-time onboard control
+                        without a prebuilt map or prescribed route, within the drone's
+                        compute and latency limits.
+                    </p>
+                </div>
+            </section>
+            <section
+                class="chapter secondary"
+                id="other-work"
+                aria-labelledby="other-work-title"
+                tabindex="-1"
+            >
+                <div class="chapter-copy">
+                    <h2 id="other-work-title" tabindex="-1">Other work</h2>
+                    <h3>PCA-assisted Bayesian optimization</h3>
+                    <p class="meta">2025 / Bachelor thesis, Leiden</p>
+                    <p>
+                        Parallel search in high-dimensional spaces using orthogonal
+                        subspace sampling. I developed and benchmarked the approach on
+                        BBOB functions in 10-40 dimensions.
+                    </p>
+                    <p>
+                        <a
+                            href="https://github.com/IvanBanny/para-ortho-pca-bo"
+                            target="_blank"
+                            rel="noopener"
+                            >Code &#8599;</a
+                        >
+                    </p>
+                    <h3>Motor imagery decoding</h3>
+                    <p class="meta">2025 - present / Serpentine AIMI, TU/e</p>
+                    <p>
+                        Studying how architecture and signal representation affect EEG
+                        classification. I compare models under a shared evaluation
+                        pipeline and investigate the methodological choices behind
+                        published results.
+                    </p>
+                    <p>
+                        <a
+                            href="https://github.com/IvanBanny/EEG-Exp"
+                            target="_blank"
+                            rel="noopener"
+                            >Code &#8599;</a
+                        >
+                    </p>
+                </div>
+            </section>
+            <section
+                class="chapter background"
+                id="background"
+                aria-labelledby="background-title"
+                tabindex="-1"
+            >
+                <div class="chapter-copy">
+                    <h2 id="background-title" tabindex="-1">Background</h2>
+                    <h3>Publications</h3>
+                    <ul>
+                        <li>
+                            <span>2024</span
+                            ><a
+                                href="https://arxiv.org/abs/2411.18699"
+                                target="_blank"
+                                rel="noopener"
+                                >An indicator for effectiveness of text-to-image
+                                guardrails utilizing the Single-Turn Crescendo Attack
+                                &#8599;</a
+                            >
+                        </li>
+                        <li>
+                            <span>2024</span
+                            ><a
+                                href="https://doi.org/10.55643/fcaptp.2.55.2024.4332"
+                                target="_blank"
+                                rel="noopener"
+                                >The Effects of Monetary Policy Shock: Evidence From
+                                Systemically Important Economies &#8599;</a
+                            >
+                        </li>
+                    </ul>
+                    <h3>Education</h3>
+                    <ul>
+                        <li>
+                            <span>2025 - present</span>Eindhoven University of
+                            Technology<br />MSc Data Science &amp; Artificial
+                            Intelligence
+                        </li>
+                        <li>
+                            <span>2022 - 2025</span>Leiden University<br />BSc Data
+                            Science &amp; Artificial Intelligence
+                        </li>
+                        <li>
+                            <span>2024 - 2025</span>TU Delft<br />Minor in Project
+                            Management
+                        </li>
+                    </ul>
+                    <h3>Mathematics &amp; algorithms</h3>
+                    <p>
+                        ICPC regionals in Benelux and Northwestern Europe. Ukrainian IMO
+                        selection and 20+ olympiad prizes. Yulia's Dream, the MIT
+                        mathematics research program.
+                    </p>
+                    <h3>Earlier work</h3>
+                    <p>
+                        Foreground / background separation with a PyTorch CNN at Explore
+                        AI @ NYCU, a Google Research supported team program (2023).
+                    </p>
+                    <h3>Tools</h3>
+                    <p>
+                        Python, C/C++, CUDA, PyTorch, JAX.<br />Linux, Slurm,
+                        distributed training. <br />Docker, AWS, Azure.
+                    </p>
+                    <p>
+                        <a
+                            href="https://github.com/IvanBanny"
+                            target="_blank"
+                            rel="noopener"
+                            >GitHub &#8599;</a
+                        >
+                        /
+                        <a
+                            href="https://www.linkedin.com/in/ivanbanny"
+                            target="_blank"
+                            rel="noopener"
+                            >LinkedIn &#8599;</a
+                        >
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="page-controls">
+            <nav class="index" aria-label="Research index">
+                <a href="#overview">About</a>
+                <a href="#dirtflow">Dirtflow</a>
+                <a href="#droomba">Droomba</a>
+                <a href="#other-work">Other work</a>
+                <a href="#background">Background</a>
+            </nav>
+        </footer>
+        <p class="fallback">
+            The animated background is unavailable. All research is available below.
+        </p>
     </body>
 </html>

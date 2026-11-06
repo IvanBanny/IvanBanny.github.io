@@ -1,0 +1,22 @@
+{
+    "name": "ivan-banny-research",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "node scripts/serve.mjs",
+        "build": "node scripts/build.mjs",
+        "preview": "node scripts/serve.mjs --dist",
+        "check": "tsc && node --check scripts/serve.mjs && node --check scripts/build.mjs && prettier --check .",
+        "test": "node --test tests/*.test.js",
+        "format": "prettier --write ."
+    },
+    "devDependencies": {
+        "esbuild": "0.25.11",
+        "prettier": "3.6.2",
+        "typescript": "5.9.3"
+    },
+    "engines": {
+        "node": ">=22"
+    }
+}

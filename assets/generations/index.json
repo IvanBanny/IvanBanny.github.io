@@ -1,0 +1,619 @@
+{
+    "frame_ms": 180,
+    "hold_ms": 3500,
+    "columns": 7,
+    "builds": [
+        {
+            "id": "f007-eefo-s8821",
+            "label": "A tiny sandstone temple with a red terracotta roof",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/f007-eefo-s8821/2a0481feccd1-256-sheet.webp",
+                    "poster": "web/f007-eefo-s8821/2a0481feccd1-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/f007-eefo-s8821/2a0481feccd1-384-sheet.webp",
+                    "poster": "web/f007-eefo-s8821/2a0481feccd1-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "f012-void-s9011",
+            "label": "A cosmic turtle made of cyan glass, blue glass, prismarine and sea lanterns",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/f012-void-s9011/d8e4235a233f-256-sheet.webp",
+                    "poster": "web/f012-void-s9011/d8e4235a233f-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/f012-void-s9011/d8e4235a233f-384-sheet.webp",
+                    "poster": "web/f012-void-s9011/d8e4235a233f-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "g003-void-s10007",
+            "label": "A white marble Greek temple with columns and a triangular pediment",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/g003-void-s10007/a15acaebb6e7-256-sheet.webp",
+                    "poster": "web/g003-void-s10007/a15acaebb6e7-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/g003-void-s10007/a15acaebb6e7-384-sheet.webp",
+                    "poster": "web/g003-void-s10007/a15acaebb6e7-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "g035-void-s10007",
+            "label": "A giant green frog sitting on a stone pedestal",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/g035-void-s10007/ea3118e90b02-256-sheet.webp",
+                    "poster": "web/g035-void-s10007/ea3118e90b02-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/g035-void-s10007/ea3118e90b02-384-sheet.webp",
+                    "poster": "web/g035-void-s10007/ea3118e90b02-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "g041-void-s47",
+            "label": "A giant jellyfish with a glowing city inside its translucent bell",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/g041-void-s47/7ade27f5bb00-256-sheet.webp",
+                    "poster": "web/g041-void-s47/7ade27f5bb00-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/g041-void-s47/7ade27f5bb00-384-sheet.webp",
+                    "poster": "web/g041-void-s47/7ade27f5bb00-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "g073-flat-s10007",
+            "label": "A medieval watchtower built from stone bricks with a wooden roof",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/g073-flat-s10007/6ff72c8ad053-256-sheet.webp",
+                    "poster": "web/g073-flat-s10007/6ff72c8ad053-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/g073-flat-s10007/6ff72c8ad053-384-sheet.webp",
+                    "poster": "web/g073-flat-s10007/6ff72c8ad053-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "g082-hills-s10007",
+            "label": "A hobbit house built into the hillside with a round wooden door",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/g082-hills-s10007/58ea8e17f9e4-256-sheet.webp",
+                    "poster": "web/g082-hills-s10007/58ea8e17f9e4-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/g082-hills-s10007/58ea8e17f9e4-384-sheet.webp",
+                    "poster": "web/g082-hills-s10007/58ea8e17f9e4-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "g090-peak-s47",
+            "label": "The Matterhorn with a sharp snowy summit and exposed rock faces",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/g090-peak-s47/300ae633bad7-256-sheet.webp",
+                    "poster": "web/g090-peak-s47/300ae633bad7-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/g090-peak-s47/300ae633bad7-384-sheet.webp",
+                    "poster": "web/g090-peak-s47/300ae633bad7-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "g126-water-s47",
+            "label": "A Japanese shrine on stilts with a red gate rising from the water",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/g126-water-s47/1d0083458796-256-sheet.webp",
+                    "poster": "web/g126-water-s47/1d0083458796-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/g126-water-s47/1d0083458796-384-sheet.webp",
+                    "poster": "web/g126-water-s47/1d0083458796-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r073-void-s151",
+            "label": "A stone elephant",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r073-void-s151/2e9d5e11b148-256-sheet.webp",
+                    "poster": "web/r073-void-s151/2e9d5e11b148-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r073-void-s151/2e9d5e11b148-384-sheet.webp",
+                    "poster": "web/r073-void-s151/2e9d5e11b148-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r077-void-s151",
+            "label": "A jellyfish",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r077-void-s151/cf0d63fa5aef-256-sheet.webp",
+                    "poster": "web/r077-void-s151/cf0d63fa5aef-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r077-void-s151/cf0d63fa5aef-384-sheet.webp",
+                    "poster": "web/r077-void-s151/cf0d63fa5aef-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r107-void-s2027",
+            "label": "A twisted tree",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r107-void-s2027/9051f19fef77-256-sheet.webp",
+                    "poster": "web/r107-void-s2027/9051f19fef77-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r107-void-s2027/9051f19fef77-384-sheet.webp",
+                    "poster": "web/r107-void-s2027/9051f19fef77-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r109-void-s2027",
+            "label": "A flowering tree",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r109-void-s2027/124a7c403a77-256-sheet.webp",
+                    "poster": "web/r109-void-s2027/124a7c403a77-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r109-void-s2027/124a7c403a77-384-sheet.webp",
+                    "poster": "web/r109-void-s2027/124a7c403a77-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r110-void-s2027",
+            "label": "An autumn tree",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r110-void-s2027/947c7d1d2b63-256-sheet.webp",
+                    "poster": "web/r110-void-s2027/947c7d1d2b63-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r110-void-s2027/947c7d1d2b63-384-sheet.webp",
+                    "poster": "web/r110-void-s2027/947c7d1d2b63-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r115-void-s2027",
+            "label": "A palm tree",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r115-void-s2027/d6f0c0185d04-256-sheet.webp",
+                    "poster": "web/r115-void-s2027/d6f0c0185d04-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r115-void-s2027/d6f0c0185d04-384-sheet.webp",
+                    "poster": "web/r115-void-s2027/d6f0c0185d04-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r117-water-s151",
+            "label": "A lighthouse",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r117-water-s151/c00a2079c058-256-sheet.webp",
+                    "poster": "web/r117-water-s151/c00a2079c058-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r117-water-s151/c00a2079c058-384-sheet.webp",
+                    "poster": "web/r117-water-s151/c00a2079c058-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r121-void-s2027",
+            "label": "A tree in a ceramic pot",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r121-void-s2027/e630f62b5d2f-256-sheet.webp",
+                    "poster": "web/r121-void-s2027/e630f62b5d2f-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r121-void-s2027/e630f62b5d2f-384-sheet.webp",
+                    "poster": "web/r121-void-s2027/e630f62b5d2f-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r122-void-s2027",
+            "label": "A snowy mountain",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r122-void-s2027/55c67aace494-256-sheet.webp",
+                    "poster": "web/r122-void-s2027/55c67aace494-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r122-void-s2027/55c67aace494-384-sheet.webp",
+                    "poster": "web/r122-void-s2027/55c67aace494-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r130-void-s2027",
+            "label": "A floating island",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r130-void-s2027/8e04725d950e-256-sheet.webp",
+                    "poster": "web/r130-void-s2027/8e04725d950e-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r130-void-s2027/8e04725d950e-384-sheet.webp",
+                    "poster": "web/r130-void-s2027/8e04725d950e-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r145-void-s2027",
+            "label": "A timber framed cottage",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r145-void-s2027/2d9cee29f9aa-256-sheet.webp",
+                    "poster": "web/r145-void-s2027/2d9cee29f9aa-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r145-void-s2027/2d9cee29f9aa-384-sheet.webp",
+                    "poster": "web/r145-void-s2027/2d9cee29f9aa-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r158-void-s2027",
+            "label": "A desert house",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r158-void-s2027/826980db6f7b-256-sheet.webp",
+                    "poster": "web/r158-void-s2027/826980db6f7b-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r158-void-s2027/826980db6f7b-384-sheet.webp",
+                    "poster": "web/r158-void-s2027/826980db6f7b-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r172-void-s2027",
+            "label": "A watchtower",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r172-void-s2027/1b9b8e04f3d1-256-sheet.webp",
+                    "poster": "web/r172-void-s2027/1b9b8e04f3d1-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r172-void-s2027/1b9b8e04f3d1-384-sheet.webp",
+                    "poster": "web/r172-void-s2027/1b9b8e04f3d1-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r173-void-s2027",
+            "label": "A Japanese pagoda",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r173-void-s2027/65c924eeb7fc-256-sheet.webp",
+                    "poster": "web/r173-void-s2027/65c924eeb7fc-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r173-void-s2027/65c924eeb7fc-384-sheet.webp",
+                    "poster": "web/r173-void-s2027/65c924eeb7fc-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r184-void-s2027",
+            "label": "A sandstone temple",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r184-void-s2027/4925c1559352-256-sheet.webp",
+                    "poster": "web/r184-void-s2027/4925c1559352-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r184-void-s2027/4925c1559352-384-sheet.webp",
+                    "poster": "web/r184-void-s2027/4925c1559352-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r205-void-s2027",
+            "label": "A Viking longship",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r205-void-s2027/8e85875768de-256-sheet.webp",
+                    "poster": "web/r205-void-s2027/8e85875768de-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r205-void-s2027/8e85875768de-384-sheet.webp",
+                    "poster": "web/r205-void-s2027/8e85875768de-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r277-void-s314159",
+            "label": "A mushroom house",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r277-void-s314159/31e3ca4ec54c-256-sheet.webp",
+                    "poster": "web/r277-void-s314159/31e3ca4ec54c-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r277-void-s314159/31e3ca4ec54c-384-sheet.webp",
+                    "poster": "web/r277-void-s314159/31e3ca4ec54c-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r281-void-s314159",
+            "label": "A small farmhouse",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r281-void-s314159/1bc281dfc8af-256-sheet.webp",
+                    "poster": "web/r281-void-s314159/1bc281dfc8af-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r281-void-s314159/1bc281dfc8af-384-sheet.webp",
+                    "poster": "web/r281-void-s314159/1bc281dfc8af-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r287-void-s314159",
+            "label": "A medieval castle",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r287-void-s314159/c05faba74fc6-256-sheet.webp",
+                    "poster": "web/r287-void-s314159/c05faba74fc6-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r287-void-s314159/c05faba74fc6-384-sheet.webp",
+                    "poster": "web/r287-void-s314159/c05faba74fc6-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r298-void-s314159",
+            "label": "A windmill",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r298-void-s314159/30f446fe09a0-256-sheet.webp",
+                    "poster": "web/r298-void-s314159/30f446fe09a0-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r298-void-s314159/30f446fe09a0-384-sheet.webp",
+                    "poster": "web/r298-void-s314159/30f446fe09a0-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r311-void-s314159",
+            "label": "A red dragon",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r311-void-s314159/9513bf245ab9-256-sheet.webp",
+                    "poster": "web/r311-void-s314159/9513bf245ab9-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r311-void-s314159/9513bf245ab9-384-sheet.webp",
+                    "poster": "web/r311-void-s314159/9513bf245ab9-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r318-flat-s314159",
+            "label": "A Japanese pagoda",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r318-flat-s314159/f7f60652273d-256-sheet.webp",
+                    "poster": "web/r318-flat-s314159/f7f60652273d-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r318-flat-s314159/f7f60652273d-384-sheet.webp",
+                    "poster": "web/r318-flat-s314159/f7f60652273d-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r323-void-s314159",
+            "label": "A sailboat",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r323-void-s314159/5d57dde981a2-256-sheet.webp",
+                    "poster": "web/r323-void-s314159/5d57dde981a2-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r323-void-s314159/5d57dde981a2-384-sheet.webp",
+                    "poster": "web/r323-void-s314159/5d57dde981a2-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r356-void-s271828",
+            "label": "A spruce tree",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r356-void-s271828/415b9cabeab4-256-sheet.webp",
+                    "poster": "web/r356-void-s271828/415b9cabeab4-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r356-void-s271828/415b9cabeab4-384-sheet.webp",
+                    "poster": "web/r356-void-s271828/415b9cabeab4-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r366-ruin-s314159",
+            "label": "A stone watchtower",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r366-ruin-s314159/5f61b2030dcb-256-sheet.webp",
+                    "poster": "web/r366-ruin-s314159/5f61b2030dcb-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r366-ruin-s314159/5f61b2030dcb-384-sheet.webp",
+                    "poster": "web/r366-ruin-s314159/5f61b2030dcb-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r405-oasis-s314159",
+            "label": "A sandstone pavilion",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r405-oasis-s314159/5b440f16bf21-256-sheet.webp",
+                    "poster": "web/r405-oasis-s314159/5b440f16bf21-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r405-oasis-s314159/5b440f16bf21-384-sheet.webp",
+                    "poster": "web/r405-oasis-s314159/5b440f16bf21-384-final.webp"
+                }
+            ]
+        },
+        {
+            "id": "r460-void-s65537",
+            "label": "An oak tree",
+            "frame_count": 21,
+            "variants": [
+                {
+                    "size": 256,
+                    "sheet": "web/r460-void-s65537/31b36906f0ce-256-sheet.webp",
+                    "poster": "web/r460-void-s65537/31b36906f0ce-256-final.webp"
+                },
+                {
+                    "size": 384,
+                    "sheet": "web/r460-void-s65537/31b36906f0ce-384-sheet.webp",
+                    "poster": "web/r460-void-s65537/31b36906f0ce-384-final.webp"
+                }
+            ]
+        }
+    ]
+}

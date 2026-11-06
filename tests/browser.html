@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Optical renderer checks</title>
+        <style>
+            body {
+                font: 16px monospace;
+                margin: 32px;
+            }
+            canvas {
+                display: block;
+                width: 640px;
+                height: 360px;
+            }
+        </style>
+        <script type="module" src="browser.js"></script>
+    </head>
+    <body>
+        <h1>Optical renderer checks</h1>
+        <p>Keep this tab visible while the checks run.</p>
+        <canvas aria-label="Renderer test"></canvas>
+        <pre id="results" role="status">Running...</pre>
+    </body>
+</html>
